@@ -1,68 +1,81 @@
-<p>
-   <b>how to connect (arch) linux to eduroam </b>
-<ol>
-   <li>get the ca certificate from your school <br>
-      this process seems different for every school. for me, I had to go to my school's onboarding website, then downloaded it from there. see <i>Figure 1</i>
-   <li>
-      connect to eduroam
-      <ol type="a">
-         <li>connect to hidden wifi network -> ssid -> eduroam</li>
-         <li>
-            connect with the following settings—
-            <p>
-            <p>Security: WPA & WPA2 Enterprise <br>
-               Authentication: Protected EAP (PEAP) <br>
-               Anonymous identity: (blank) <br>
-               domain: (blank) <br>
-               CA certificate: my_school_certificate.cer <br>
-               PEAP version: automatic <br>
-               Inner authentication: MSCHAPv2 <br>
-               Username: meow_man@utah.edu <br>
-               password: ******* (your school password)
-            </p>
-         </li>
-      </ol>
-   </li>
-   </li>
-</ol>
-</p>
-<p>
-   <b>how to connect boox devices to eduroam</b> <br>
-   for whatever reason my nova air don't seem to work with my university's wifi, as such I resort to eduroam <br>
-<ol>
-   <li>get the ca certificate from you school <br>
-      this process seems different for every school. for me, I had to go to my school's onboarding website, then downloaded it from there. see <i>Figure 1</i>
-   </li>
-   <li>
-      install the ca certificate on android
-      <ol type='a'>
-         <li>install the "android hidden settings" app. available in the play store</li>
-         <li>android hidden settings, settings -> security -> encryption & credentials -> install from storage -> select the ca certificate -> name it</li>
-      </ol>
-   </li>
-   <li>
-      connect to eduroam
-      <ol type='a'>
-         <li>
-            home -> settings -> (+) at the top right -> ssid: eduroam, security -> WPA/WPA2/WPA3-Enterprise
-         </li>
-         <li>
-            connect with the following settings—
-            <p>
-               eap method: peap <br>
-               phase 2 authentication: MSCHAPv2 <br>
-               CA certificate: (select the previously installed certificate) <br>
-               identity: meow_man@utah.edu <br>
-               anonymous identity: (leave blank) <br>
-               enter the password: ******* (your school password)
-            </p>
-         </li>
-      </ol>
-   </li>
-</ol>
-</p>
-
-figure 1:
-
-
-updated 01/31/23
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>how to connect (arch) linux to eduroam</title>
+</head>
+<body>
+   <p>
+      <b>how to connect (arch) linux to eduroam </b>
+   <ol>
+      <li>get the ca certificate from your school <br>
+         this process seems different for every school. for me, I had to go to my school's onboarding website, then downloaded it from there. see <i>Figure 1</i>
+      <li>
+         connect to eduroam
+         <ol type="a">
+            <li>connect to hidden wifi network -> ssid -> eduroam</li>
+            <li>
+               connect with the following settings—
+               <p>
+               <p>Security: WPA & WPA2 Enterprise <br>
+                  Authentication: Protected EAP (PEAP) <br>
+                  Anonymous identity: (blank) <br>
+                  domain: (blank) <br>
+                  CA certificate: my_school_certificate.cer <br>
+                  PEAP version: automatic <br>
+                  Inner authentication: MSCHAPv2 <br>
+                  Username: meow_man@utah.edu <br>
+                  password: ******* (your school password)
+               </p>
+            </li>
+         </ol>
+      </li>
+      </li>
+   </ol>
+   </p>
+   <p>
+      <b>how to connect boox devices to eduroam</b> <br>
+      for whatever reason my nova air don't seem to work with my university's wifi, as such I resort to eduroam <br>
+   <ol>
+      <li>get the ca certificate from you school <br>
+         this process seems different for every school. for me, I had to go to my school's onboarding website, then downloaded it from there. see <i>Figure 1</i>
+      </li>
+      <li>
+         install the ca certificate on android
+         <ol type='a'>
+            <li>install the "android hidden settings" app. available in the play store</li>
+            <li>android hidden settings, settings -> security -> encryption & credentials -> install from storage -> select the ca certificate -> name it</li>
+         </ol>
+      </li>
+      <li>
+         connect to eduroam
+         <ol type='a'>
+            <li>
+               home -> settings -> (+) at the top right -> ssid: eduroam, security -> WPA/WPA2/WPA3-Enterprise
+            </li>
+            <li>
+               connect with the following settings—
+               <p>
+                  eap method: peap <br>
+                  phase 2 authentication: MSCHAPv2 <br>
+                  CA certificate: (select the previously installed certificate) <br>
+                  identity: meow_man@utah.edu <br>
+                  anonymous identity: (leave blank) <br>
+                  enter the password: ******* (your school password)
+               </p>
+            </li>
+         </ol>
+      </li>
+   </ol>
+   </p>
+   
+   figure 1:
+   
+   
+   updated 01/31/23
+   
+   
+</body>
+</html>
