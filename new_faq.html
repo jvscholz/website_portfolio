@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>JAMES SCHOLZ</title>
+        <style>
+          
+.faq-section {
+    background: #fdfdfd;
+    min-height: 100vh;
+    padding: 10vh 0 0;
+}
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+.faq-title h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 2px;
+    background: #E91E63;
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq {
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.faq .card {
+  border: none;
+  background: none;
+  border-bottom: 1px dashed #CEE1F8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #3B566E;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .card .card-header .faq-title .badge {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 14px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  text-align: center;
+  background: #E91E63;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.faq .card .card-body {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6F8BA4;
+  line-height: 28px;
+  letter-spacing: 1px;
+  border-top: 1px solid #F3F8FF;
+}
+
+.faq .card .card-body p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 991px) {
+  .faq {
+    margin-bottom: 30px;
+  }
+  .faq .card .card-header .faq-title {
+    line-height: 26px;
+    margin-top: 10px;
+  }
+}
+            * {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: Poppins;
+  color: #011640;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  margin: 8rem 0 2rem 0;
+}
+
+@media (max-width: 650px){
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+h2 {
+  margin-bottom: 5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #011640;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  background-color: #fff;
+  box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
+  z-index: 10;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 0px 0.8rem;
+}
+
+nav .code {
+  color: white;
+  transition: color 0.3s ease-out;
+}
+
+nav a:hover .code {
+  color: #F2797B;
+}
+
+
+#welcome-section {
+  margin: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  #welcome-section {
+    text-align: center;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.welcome-img  {
+  margin-top: 8rem;
+  width: 580px;
+  height: auto;
+}
+
+#mobile-only {
+  display: none;
+}
+
+@media (max-width: 850px){
+  #desktop-only {
+    display: none;
+  }
+  
+  #mobile-only {
+    display: initial;
+    width: 450px;
+    height: auto;
+  }
+}
+
+#subheading {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+#subheading span {
+  color: #F2797B;
+}
+
+@media (max-width: 650px){
+  #subheading {
+    font-size: 4rem;
+  }
+}
+
+
+#about {
+  padding: 10rem 5rem 5rem 5rem;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+#about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  #about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+#my-story {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+#interests-list {
+  background-color: #011640;
+  color: #fff;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+  #my-story {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+  
+  #interests-list {
+    margin: auto;
+  }
+}
+
+#interests-list > h3 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+
+#projects {
+  padding: 10rem 5rem;
+  text-align: center;
+}
+
+#projects > p {
+  margin-bottom: 5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 5rem;
+  margin: 1.5rem auto;
+}
+
+@media (max-width: 400px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+
+.card {
+  position: relative;
+  padding-bottom: 2rem;
+  border: 1px solid rgba(217, 217, 217, 0.5);
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 0 2rem -0.7rem #D9D9D9;
+  border: 1px solid #D9D9D9;
+}
+
+.desc {
+  padding: 2rem;
+  text-align: left;
+}
+
+.project-tile {
+  margin: 2rem 0 2rem 0;
+}
+
+.project-tile > a {
+  color: #F2797B;
+  font-weight: 200;
+}
+
+/* Contact section */
+
+#contact {
+  margin-top: 3rem;
+  padding: 10rem 5rem;
+  text-align: center;
+  background-color: #011640;
+  color: #fff;
+}
+
+.contact-icon {
+  width: 2rem;
+  padding: 1rem;
+  filter: invert(100%);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+
+.contact-details:hover .contact-icon {
+  filter: invert(83%) sepia(39%) saturate(6798%) hue-rotate(308deg) brightness(92%) contrast(107%);
+}
+
+.contact-details:hover {
+  color: #F2797B;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #011640;
+  color: #fff;
+}
+
+.heart::before {
+  content: '\2665';
+  color: #F2797B;
+  font-size: 1.6rem;
+}
+
+footer .code {
+  color: #F2797B;
+}
+
+
+::-moz-selection { 
+  color: #fff;
+  background: #02A1A3;
+}
+
+::selection {
+  color: #fff;
+  background: #02A1A3;
+}
+        </style>
+    </head>
+    <body>
+        <nav id="navbar" class="nav">
+            <ul>
+              <li>
+                <a href="index.html">
+                  <span class="code">&lt;</span>
+                  About
+                  <span class="code">&#47;&gt;</span>
+                </a>
+              </li>
+              <li>
+                <a href="faq.html">
+                  <span class="code">&lt;</span>
+                  faq
+                  <span class="code">&#47;&gt;</span>
+                </a>
+              </li>
+                <a href="https://www.youtube.com/channel/UCMwo6hT5hI3R56rO2HYP-wQ">
+                  <span class="code">&lt;</span>
+                  Youtube
+                  <span class="code">&#47;&gt;</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/file/d/1Y-Zh8B-K05bBhtVcnYZ4qhRxza5yL3U1/view?usp=sharing">
+                  <span class="code">&lt;</span>
+                  resume
+                  <span class="code">&#47;&gt;</span>
+                </a>
+              </li>
+              <li>
+              <li>
+                <a href="#contact">
+                  <span class="code">&lt;</span>
+                  Contact
+                  <span class="code">&#47;&gt;</span>
+                </a>
+              </li>
+              <li>
+            </ul>
+          </nav>
+          <section class="faq-section">
+            <div class="container">
+              <div class="row">
+                                <div class="col-md-6 offset-md-3">
+            
+                                    <div class="faq-title text-center pb-3">
+                                        <h2>FAQ</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 offset-md-3">
+                                    <div class="faq" id="accordion">
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-1">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                                        <span class="badge">1</span>age:</h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>20 years old .</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-2">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                                        <span class="badge">2</span> birthday</h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>4/27/2000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-3">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                                        <span class="badge">3</span>american?</h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>yes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-4">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                                        <span class="badge">4</span> where are you from?</h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>salt lake city, utah, usa</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-5">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                                        <span class="badge">5</span> what's your height?</h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p> 185 cm 6'1"</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-6">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                                        <span class="badge">6</span>are you an only child?</h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>yeah</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="faqHeading-7">
+                                                <div class="mb-0">
+                                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                                                        <span class="badge">7</span> major:
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <p>computer engineering</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+              </div>
+          </section>
+          <section id="contact">
+            <h2>Let's work together</h2>
+            <p>Find me on</p>
+            <div class="contact-links">
+              <a href="https://twitter.com/jvscholz" target="_blank" class="contact-details">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/afcd86eae3fc73fd254e961fec9f69d190160212/personal-portfolio/images/twitter.svg" alt="twitter logo" class="contact-icon">Twitter
+              </a>
+              <a href="https://www.linkedin.com/in/jvscholz" target="_blank" class="contact-details">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/afcd86eae3fc73fd254e961fec9f69d190160212/personal-portfolio/images/linkedin.svg" alt="linkedin logo" class="contact-icon">LinkedIn
+              </a>
+              <a href="https://github.com/jvscholz" target="_blank" class="contact-details">
+                <img src="https://raw.githubusercontent.com/sfoteini/responsive-web-design-freeCodeCamp/afcd86eae3fc73fd254e961fec9f69d190160212/personal-portfolio/images/github.svg" alt="github logo" class="contact-icon">GitHub
+              </a>
+            </div>
+          </section>
+          
+          <footer>
+            <p>
+              <span class="code">&lt;</span>
+              <span class="code">&#47;&gt;</span>
+              with
+              <span class="heart"></span>
+              by JAMES SCHOLZ
+            </p>
+          </footer>
+    </body>
+</html>

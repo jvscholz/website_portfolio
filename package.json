@@ -1,0 +1,14 @@
+{
+  "name": "james-scholz",
+  "version": "1.0.0",
+  "description": "This a website for James Scholz",
+  "main": "index.html",
+  "scripts": {
+    "test": "CMD"
+  },
+  "keywords": [
+    "James-Scholz"
+  ],
+  "author": "youssef boumhaout",
+  "license": "MIT"
+}
